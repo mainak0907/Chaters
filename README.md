@@ -1,5 +1,5 @@
 # FullStack-Chatify
-Full Stack Chat Application with Group Chat Option  built with socket.io, Express JS,Mongo DB,  login & signup functionality using JWT and encryption using bcrypt
+Full Stack Chat Application with Group Chat Option  built with socket.io, Express JS,Mongo DB,  login & signup functionality using JWT and encryption using bcrypt . Deployed on Render.
 
 # Documentation 
 ## Middlewares - 
@@ -92,6 +92,9 @@ Socket.IO uses an event-driven model for communication. Both the server and clie
 <img width="490" alt="image" src="https://github.com/mainak0907/FullStack-Chatify/assets/88925745/a45b6bbf-3077-4f3b-8e9e-6aaf4571009b">
 
 
+## bcrypt - Encryption 
+
+bcrypt is a library commonly used for securely hashing passwords. It employs a password hashing algorithm that is intentionally slow and computationally expensive, making it resistant to brute-force and rainbow table attacks. bcrypt is specifically designed for securely hashing passwords and is a popular choice for password hashing in web development.
 
 
 
