@@ -30,6 +30,17 @@ Once a model is created, you can use it to perform various database operations s
 
 In Mongoose, a "reference" is a way to establish a relationship between documents in different collections. Instead of embedding one document within another, you store a reference to the other document's ObjectId. This is often used to represent one-to-many or many-to-many relationships between documents.
 
+.pre() method  middleware allows you to specify functions that will be executed before certain operations are performed on a document or a model. These functions are commonly used to perform tasks such as validation, modification of data, or executing custom logic before saving or updating documents.
+
+```
+schema.pre(hook, function (next) {
+  // Your middleware logic here
+  // Call next() when your middleware is done to move to the next middleware or operation
+  next();
+});
+
+```
+
 ## express-async-handler
 
 express-async-handler is a middleware for Express.js, a popular web application framework for Node.js. This middleware is designed to simplify error handling in route handlers that use asynchronous functions (such as those that involve database queries or external API calls). It helps avoid the need for explicitly wrapping each route handler in a try-catch block to handle asynchronous errors.
